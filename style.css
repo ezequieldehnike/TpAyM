@@ -10,6 +10,7 @@ body{
   background: rgb(2,70,254);
   background: linear-gradient(61deg, rgba(2,70,254,1) 0%, rgba(73,3,251,0.5494572829131652) 51%, rgba(0,236,255,1) 100%);
   width: 100%;
+  heigth: 100vh;
 }
 
 body::-webkit-scrollbar{
