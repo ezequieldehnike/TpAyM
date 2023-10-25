@@ -10,7 +10,7 @@ body{
   background: rgb(2,70,254);
   background: linear-gradient(61deg, rgba(2,70,254,1) 0%, rgba(73,3,251,0.5494572829131652) 51%, rgba(0,236,255,1) 100%);
   width: 100%;
-  heigth: 100vh;
+  height: 100vh;
 }
 
 body::-webkit-scrollbar{
@@ -103,7 +103,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 #login:hover{
-  background-color: #4080e5;
+  background-color: #c490ff;
   color: #282727;
   transition: 0.2s ease-in-out;
   cursor: pointer;
