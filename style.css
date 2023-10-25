@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: rgb(2,70,254);
+  background: linear-gradient(61deg, rgba(2,70,254,1) 0%, rgba(73,3,251,0.5494572829131652) 51%, rgba(0,236,255,1) 100%);
+  width: 100%;
+}
+
+body::-webkit-scrollbar{
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: #2f2e2f;
+  border-radius: 50px;
+  height: 50px;
+}
+
+::selection{
+  color: #fff;
+  background: #664AFF;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  
+}
+.section-search{
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-cart{
+  margin-left: 5%;
+}
+
+.icon{
+  width: 35px;
+  height: 35px;
+  margin: 0px 54px 0px 1px;
+
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0px 0px 0px 23%;
+  padding: 0;
+  display: flex;
+  justify-content: center; 
+  flex: 1;
+
+}
+
+.navbar a {
+  text-decoration: none; 
+  color: #2b2b2c;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 2px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar p:hover {
+  color: #5e46fd;
+  transform: translateY(-3px);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+#login{
+  background-color: #644bff;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 25px;
+  color: #ffffff;
+  font-weight: 500;
+  margin: 0px 20px 9px 0px;
+
+}
+
+#login:hover{
+  background-color: #4080e5;
+  color: #282727;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#register{
+  background-color: #ffffff;
+  border-radius: 25px;
+  font-size: 14px;
+  padding: 6px 10px;
+  color: #302f2f;
+  font-weight: 500;
+  margin: 0px 20px 9px 0px;
+  border: 1px solid #282727;
+}
+
+#register:hover{
+  background-color: #28292b;
+  color: #968f8f;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-links li {
+  margin-right: 20px; 
+}
+
+.logo-png{
+  width: 140px;
+  height: 70px;
+  margin-left: 30px;
+}
+
+/* SEARCH */
+
+.wrapper{
+  width: 55%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper .search-input{
+  background: #fff;
+  width: 80%;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+
+.search-input input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+.search-input.active input{
+  border-radius: 5px 5px 0 0;
+}
+
+.search-input .autocom-box{
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+.search-input.active .autocom-box{
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+  background-color: #ffffff;
+}
+
+.autocom-box li{
+  list-style: none;
+  padding: 3px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.search-input.active .autocom-box li{
+  display: block;
+}
+.autocom-box li:hover{
+  background: #efefef;
+}
+
+.search-input .icon{
+  position: absolute;
+  right: 0px;
+  top: -3px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  color: #644bff;
+  cursor: pointer;
+}
+
+/* SECCION IMAGENES */
+
+.box-img {
+  display: flex; /* Establece un contenedor flexible */
+  overflow-x: auto; /* Agrega una barra de desplazamiento horizontal si es necesario */
+  max-width: 100%; 
+  justify-content: center;
+}
+
+.asset {
+  display: flex; /* Establece un contenedor flexible para las imágenes */
+}
+
+.asset img {
+  width: 300px; /* Ajusta el ancho de las imágenes para que sean del mismo tamaño */
+  object-fit: cover; /* Ajusta el comportamiento de la imagen para que se ajuste y se recorte si es necesario */
+  max-height: 100vh; /* Limita la altura máxima al viewport */
+  margin: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 11px 7px rgba(220, 223, 225, 0.63);
+}
+
+/* FOTTER */
+
+footer {
+  background-color: #2b2b2c; /* Violeta */
+  color: #ffffff; /* Letras blancas */
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-content {
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.footer-red {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#icon-red{
+  margin: 0px 10px;
+}
+
+#icon-red:hover{
+  color: #644bff;
+}
+
+.slogan {
+  font-size: 18px;
+  margin-right: 1rem;
+}
+
+.season {
+  font-size: 18px;
+  margin-left: 1rem;
+
+}
